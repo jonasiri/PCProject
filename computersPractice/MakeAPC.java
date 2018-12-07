@@ -42,13 +42,10 @@ public class MakeAPC {
 		}
 	}
 	
-	public static void sortHDD(Computer [] allPCs) {
-		ArrayList<Integer> hDDs = new ArrayList<Integer>(); 
-		for (Computer hDD: allPCs) {
-			hDDs.add(hDD.gethDD()); 
+		public static void sortHDD(Computer[] allPCs) {
+		for (int outer = 0; outer < allPCs.length; outer++) {
+			
 		}
-		Collections.sort(hDDs, Collections.reverseOrder());
-		System.out.println(Arrays.deepToString(hDDs.toArray()));
 	}
 
 }
